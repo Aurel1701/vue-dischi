@@ -1,12 +1,12 @@
 <template>
   <div class="container-card">
     <div class="discs">
-      <img :src="components.poster" />
-      <h5>{{ components.title }}</h5>
+      <img :src="component.poster" />
+      <h5>{{ component.title }}</h5>
       <p>
-        {{ components.author }}
+        {{ component.author }}
         <br />
-        {{ components.year }}
+        {{ component.year }}
       </p>
     </div>
   </div>
@@ -15,16 +15,31 @@
 
 
 <script>
-
 export default {
   props: {
-    components: Object,
+    component: Object,
   },
-  
 };
 </script>
 
 
 <style lang="scss" scoped>
-
+.discs {
+  color: white;
+  text-align: center;
+  img {
+    width: 150px;
+    padding: 10px;
+  }
+  h5 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 18px;
+    margin-top: 5px;
+  }
+  p {
+    color: grey;
+    margin-top: 20px;
+  }
+}
 </style>

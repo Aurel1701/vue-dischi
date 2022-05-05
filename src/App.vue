@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <HeaderAlt/>
-    
     <BoxCard :components="components" />
   </div>
 </template>

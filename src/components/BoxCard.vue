@@ -1,20 +1,20 @@
 <template>
     <div class="box">
-        <HeaderCard v-for="(component, index) in components"
+        <HeaderCard class="card-box" v-for="(component, index) in components"
         :key="index"
-        :component="components"
+        :component="component"
         />
     </div>
 </template>
 
 <script>
-import HeaderCard  from './components/HeaderCard.vue'
+import HeaderCard  from '@/components/HeaderCard.vue'
 export default {
     components: {
     HeaderCard,
     },
     props:{
-        components: Array,
+        components:Object,
     }
  
 }
@@ -22,5 +22,22 @@ export default {
 
 
 <style lang="scss" scoped>
-
+.box{
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+    background-color: #1E2D3B;
+    .card-box{
+        
+        margin: 10px;
+        width: 200px;
+        height: 350px;
+        background-color:rgba(30, 45, 59, 1) ;
+        
+    }
+}
 </style>
