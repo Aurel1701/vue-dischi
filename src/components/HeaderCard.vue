@@ -1,7 +1,7 @@
 <template>
   <div class="container-card">
     <div class="discs">
-      <img :src="disc.poster" />
+      <img :src="components.poster" />
       <h5>{{ components.title }}</h5>
       <p>
         {{ components.author }}

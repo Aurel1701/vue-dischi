@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import HeaderCard from './HeaderCard.vue'
+import HeaderCard  from './components/HeaderCard.vue'
 export default {
     components: {
     HeaderCard,
@@ -17,7 +17,6 @@ export default {
         components: Array,
     }
  
-    
 }
 </script>
 

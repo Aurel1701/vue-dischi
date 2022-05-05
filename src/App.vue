@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <HeaderAlt/>
-    <HeaderCard/>
-    <BoxCard/>
+    
+    <BoxCard :components="components" />
   </div>
 </template>
 
 <script>
 import HeaderAlt  from './components/HeaderAlt.vue'
-import HeaderCard  from './components/HeaderCard.vue'
+
 import BoxCard  from './components/BoxCard.vue'
 import axios from 'axios';
 
@@ -16,7 +16,7 @@ export default {
   name: 'App',
   components: {
     HeaderAlt,
-    HeaderCard, 
+    
     BoxCard,
   },
   data(){
