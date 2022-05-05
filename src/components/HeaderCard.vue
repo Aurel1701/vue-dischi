@@ -2,11 +2,11 @@
   <div class="container-card">
     <div class="discs">
       <img :src="disc.poster" />
-      <h5>{{ dischi.title }}</h5>
+      <h5>{{ components.title }}</h5>
       <p>
-        {{ dischi.author }}
+        {{ components.author }}
         <br />
-        {{ dischi.year }}
+        {{ components.year }}
       </p>
     </div>
   </div>
