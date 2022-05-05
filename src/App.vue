@@ -21,13 +21,14 @@ export default {
   },
   data(){
     return{
-      components: [],
+      components:[],
 
     };
     
   },
    mounted(){
     axios.get('https://flynn.boolean.careers/exercises/api/array/music').then(() => {
+    
     })
   },
 }

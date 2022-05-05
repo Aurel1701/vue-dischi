@@ -1,8 +1,8 @@
 <template>
     <div class="box">
-        <header-card v-for="(component, index) in components"
+        <HeaderCard v-for="(component, index) in components"
         :key="index"
-        :disc="dischi"
+        :component="components"
         />
     </div>
 </template>
@@ -14,7 +14,7 @@ export default {
     HeaderCard,
     },
     props:{
-        discs: Array,
+        components: Array,
     }
  
     
