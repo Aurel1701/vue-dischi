@@ -27,8 +27,9 @@ export default {
     
   },
    mounted(){
-    axios.get('https://flynn.boolean.careers/exercises/api/array/music').then(() => {
-    
+    axios.get('https://flynn.boolean.careers/exercises/api/array/music').then((response) => {
+    console.log(response.data);
+    this.components = response.data.response;
     })
   },
 }
