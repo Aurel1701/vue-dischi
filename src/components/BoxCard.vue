@@ -3,6 +3,7 @@
         <HeaderCard class="card-box" v-for="(component, index) in components"
         :key="index"
         :component="component"
+        class:"card-box
         />
     </div>
 </template>
