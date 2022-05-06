@@ -26,6 +26,10 @@ export default {
 
     height: 100vh;
     background-color: #1E2D3B;
-
+    .card-box{
+        width: 200px;
+        height: 350px;
+        background-color:rgba(30, 45, 59, 1) ;
+    }
 }
 </style>

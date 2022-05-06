@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <HeaderAlt/>
+    <HeaderAlt :discs = "filterGenere"/>
     <SearchBar :values="['All','Pop', 'Rock', 'Jazz', 'Metal']" @selectedGenere="filterResult"/>
     <BoxCard :components="components" />
   </div>
