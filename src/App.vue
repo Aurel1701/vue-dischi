@@ -8,7 +8,7 @@
 
 <script>
 import HeaderAlt  from './components/HeaderAlt.vue'
-import SearchBar  from './components/SearchBar .vue'
+import SearchBar  from '@/components/SearchBar.vue'
 import BoxCard  from './components/BoxCard.vue'
 import axios from 'axios';
 
