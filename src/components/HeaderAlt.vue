@@ -1,5 +1,5 @@
 <template>
-  <header class="container">
+  <header class="contain">
     <div class="logo">
       <img src="../assets/spotifylogo.png" alt="" />
     </div>

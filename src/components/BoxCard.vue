@@ -1,5 +1,5 @@
 <template>
-    <div class="box">
+    <div class="box d-flex flex-wrap pt-5">
         <HeaderCard class="card-box" v-for="(component, index) in components"
         :key="index"
         :component="component"
@@ -23,17 +23,11 @@ export default {
 
 <style lang="scss" scoped>
 .box{
-    padding-top: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    
-    
+
+    height: 100vh;
     background-color: #1E2D3B;
     .card-box{
         
-        margin: 10px;
         width: 200px;
         height: 350px;
         background-color:rgba(30, 45, 59, 1) ;
