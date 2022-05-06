@@ -1,6 +1,6 @@
 <template>
   <div class="container-card">
-    <div class="discs">
+    <div class=" discs">
       <img :src="component.poster" />
       <h5>{{ component.title }}</h5>
       <p>
@@ -28,14 +28,15 @@ export default {
   color: white;
   text-align: center;
   img {
-    width: 150px;
+     padding: 10px;
+    width: 200px;
     padding: 10px;
   }
   h5 {
     text-transform: uppercase;
     font-weight: bolder;
-    font-size: 18px;
-    margin-top: 5px;
+    font-size: 19px;
+    margin-top: 6px;
   }
   p {
     color: grey;
